@@ -1,0 +1,35 @@
+.sidebar{
+    width: 14rem;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 3.1rem;
+    background-color: white;
+    overflow-y: auto;
+
+}
+.sidebar-icon{
+    height: 1.2rem;
+    flex-shrink: 0;
+}
+.nav-link text{
+    padding: 0;
+    padding-right: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+@media (max-width:560px){
+    .sidebar{
+        display: none;
+    }
+    .page-content{
+        margin-left: 0!important;
+    }
+    .search{
+        display: none;
+        margin-left: 100px;
+    }
+    .microphone{
+        display: none;
+    }
+}

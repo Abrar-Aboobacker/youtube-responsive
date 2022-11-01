@@ -1,0 +1,21 @@
+.page-content{
+    margin-left: 14.6rem;
+    margin-top: 5rem!important;
+    position: relative;
+}
+.channel-profile{
+    border-radius: 50%;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+.card-video h4{
+    font-size:1rem;
+    font-weight: bold;
+    color: black;
+}
+.card-video div{
+    color: gray;
+    font-size: .8rem;
+}

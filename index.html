@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="shortcut icon" href="icons/youtube-logo-png-2072.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="navigation-bar bg-white">
+      <div class="container-fluid">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-md-between ps-1"
+        >
+          <div class="col d-flex align-items-center col-md-auto">
+            <div>
+              <img class="threelines" src="icons/threelines.webp" alt="" />
+            </div>
+
+            <img src="icons/youtube logo.jpg" alt="" />
+          </div>
+          <div
+            class="col col-md-6 col-lg-5 d-md-flex align-items-center jestify-content-center"
+          >
+            <div class="input-group flex-nowrap col-10" styles="width:90%;">
+              <input  type="text" class="form-control search" placeholder="Search" />
+              <button class="input-group-text">
+                <img class="icon" src="icons/search icon.png" alt="" />
+              </button>
+            </div>
+            <div class="ms-3 microphone">
+              <img class="icon" src="icons/microphone.png" alt="" />
+            </div>
+          </div>
+
+          <ul class="nav col-md-auto">
+            <li>
+              <a href="#" class="nav-link px-2">
+                <img class="icon" src="icons/create.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link px-2">
+                <img class="icon" src="icons/notifications.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link px-2">
+                <img
+                  class="icon rounded-circle"
+                  src="icons/profile picture.jpg"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar d-md-flex flex-column flex-shrink-0 p-3 bg-light">
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/home.svg" alt="" />
+            <span class="m-3 span">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon"src="icons/Screenshot 2022-10-22 144203.jpg " alt=""/>
+            <span class="m-3 span">Shorts</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/subscriptions.svg " alt="" />
+            <span class="m-3 span">Subscription</span>
+          </a>
+        </li>
+        <hr />
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/library.svg" alt="" />
+            <span class="m-3 span">Library</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/History.png" alt="" />
+            <span class="m-3 span">History</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Screenshot_1.png" alt="" />
+            <span class="m-3 span">Your Videos</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Watch Later.png" alt="" />
+            <span class="m-3 span">Watch later</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Liked videos.png" alt="" />
+            <span class="m-3 span">Liked Videos</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Craft.png" alt="" />
+            <span class="m-3 span">Craft</span>
+          </a>
+        </li>
+        <hr/>
+        <li class="nav-item">
+          <div class="nav-link pt-3 text-dark">
+              <span class="text-uppercase">Explore</span>
+          </div>
+      </li>
+  
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Trending.png" alt="" />
+            <span class="m-3 span">Trending</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Music.png" alt="" />
+            <span class="m-3 span">Music</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Movies.png" alt="" />
+            <span class="m-3 span">Movies</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Live.png" alt="" />
+            <span class="m-3 span">Live</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Gaming.png" alt="" />
+            <span class="m-3 span">Gaming</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/News.png" alt="" />
+            <span class="m-3 span">News</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Sports.png" alt="" />
+            <span class="m-3 span">Sports</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Learning.png" alt="" />
+            <span class="m-3 span">Learning</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Fashion.png" alt="" />
+            <span class="m-3 span">Fashion</span>
+          </a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Settings.png" alt="" />
+            <span class="m-3 span">Settings</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Report history.png" alt="" />
+            <span class="m-3 span">Report history</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark">
+            <img class="sidebar-icon" src="icons/Help.png" alt="" />
+            <span class="m-3 span">Help</span>
+          </a>
+        </li>
+        <hr>
+      </ul>
+      <ul class="nav nav-footer mb-3"
+        style="padding-right: 1.8rem; padding-left: 1rem">
+        <li class="nav-item">
+          <a href="#"class="nav-link text text-dark"style="padding: 0;padding-right: 0.3rem;font-size: 0.75rem; font-weight: bold; ">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >Press</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >Copyright</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >Contact us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >Creators</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >Advertise</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >Developers</a
+          >
+        </li>
+        <br />
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >Terms</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >Privacy</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >Policy & Safety</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >How YouTube works</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            "
+            >Test new features</a
+          >
+        </li>
+      </ul>
+
+      <ul
+        class="nav nav-footer mb-3"
+        style="padding-right: 1.8rem; padding-left: 1rem"
+      >
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text text-dark fw"
+            style="
+              padding: 0;
+              padding-right: 0.3rem;
+              font-size: 0.75rem;
+              font-weight: bold;
+            ">© 2022 Google LLC</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="page-content mt-5">
+        <div class="container-fluid  ">
+          <div class="row mt-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 1.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 1.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>this girl does not exist....</h4>
+                    <div>PiXimperfect </div>
+                    <div>664K views · 4 weeks ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 2.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 2.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>Jaya Jaya Jaya Jaya Hey Theme Song | Ankit Menon | Darshana</h4>
+                    <div>Saina Music  </div>
+                    <div>1.2M views · 5 days ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 3.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 3.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>10000 Bubble Gum Giant Bubble Making Challenge</h4>
+                    <div>M4 Tech  </div>
+                    <div>1.7M views · 7 days ago</div>
+                   </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/hqdefault (1).webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 4.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>Aram Ata Hai Deedar Se Tere (Ek Lamha) Slowed + Reverb</h4>
+                    <div>MOiZZ KHAN YT ✓ </div>
+                    <div>16M views · 6 months ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/hqdefault.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 5.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>Windows Why do we need a new OS Marketing and Technology by Windows, computers and Technology</h4>
+                    <div>Windows, computers and Technology ✓</div>
+                    <div>678 views · 3 days ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 6.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 6.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>How to change your life in a year</h4>
+                    <div>Better Ideas ✓</div>
+                    <div>2.3M views · 2 weeks ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 8.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 8.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>I took a photo of myself everyday for 1,217 days</h4>
+                    <div>Max Euceda  </div>
+                    <div>859K views · 2 months ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 7.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 7.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>How I stay productive 98% of every day.</h4>
+                    <div>Sebastian Ghiorghiu</div>
+                    <div>497K views · 1 month ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 9.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 9.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4> JABLA | Final Episode | Webseries | Fliq</h4>
+                    <div>Karikku Fliq ✓ </div>
+                    <div>1.7M views · 1 day ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 10.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 10.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>
+                      I Gave People $ 1,000,000 But ONLY 1 Minute to Spend It!</h4>
+                    <div>Mr Beast ✓</div>
+                    <div>114M views · 1 year ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 11.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 11.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>How (in 2022) to become a software engineer With no experience</h4>
+                    <div>SuperSimpleDev</div>
+                    <div>350K views · 1 year ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 12.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 12.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>I Want It That Way-Backstreet Boys (Lyrics)</h4>
+                    <div>Pillow </div>
+                    <div>12M views · 2 years ago </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 13.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 13.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>
+                      SQL Course | SQL Training | SQL Tutorial For Beginners | Intellipaat</h4>
+                    <div>Intellipaat</div>
+                    <div>1.1M views · 1 year ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail.14.jpg" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 14.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>Morning Tea | Funny Episodes | Mr Bean Cartoon World</h4>
+                    <div>Mr Bean World ✓</div>
+                    <div>44M views · 3 years ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 15.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 15.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>Challenging Google's Top Feeder College Students? ft. UC Berkeley</h4>
+                    <div>Singh in USA  </div>
+                    <div>386K views · 8 days ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="#" class="card card-video border-0 bg-transparent mb-4">
+                <img class="img-fluid" src="thumbnails/thumbnail 16.webp" alt="">
+                <div class="card-video-details d-flex mt-2">
+                  <div class="me-2">
+                    <img class="channel-profile" src="profile picture/channel 16.jpg" width="40" alt="">
+                  </div> 
+                  <div>
+                    <h4>19 Types of Students in an Exam</h4>
+                    <div>JianHao Tan ✓</div>
+                    <div>10M views · 11 months ago</div>
+                  </div>
+                </div>
+              </a>
+            </div>           
+          </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+  </body>
+</html>
